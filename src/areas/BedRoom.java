@@ -1,0 +1,48 @@
+package areas;
+
+public class BedRoom {
+    private BedSize bedSize;
+    private boolean tv;
+    private int height, width;
+    private String color;
+
+    public BedSize getBedSize() {
+        return bedSize;
+    }
+
+    public void setBedSize(BedSize bedSize) {
+        this.bedSize = bedSize;
+    }
+
+    public boolean isTv() {
+        return tv;
+    }
+
+    public void setTv(boolean tv) {
+        this.tv = tv;
+    }
+
+    public int getHeight() {
+        return height;
+    }
+
+    public void setHeight(int height) {
+        this.height = height;
+    }
+
+    public int getWidth() {
+        return width;
+    }
+
+    public void setWidth(int width) {
+        this.width = width;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+}
