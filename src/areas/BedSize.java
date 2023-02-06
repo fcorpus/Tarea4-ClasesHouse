@@ -1,13 +1,9 @@
 package areas;
 
-public class BedSize {
-    private String bedSize;
+public enum BedSize {
+    king,
+    queen,
+    individual,
+    matrimonial
 
-    public String getBedSize() {
-        return bedSize;
-    }
-
-    public void setBedSize(String bedSize) {
-        this.bedSize = bedSize;
-    }
 }

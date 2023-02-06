@@ -3,16 +3,22 @@ package home;
 import areas.*;
 
 public class House {
+    public static final int MAX_REST_ROOMS = 10;
+    public static final int MAX_BED_ROOMS = 10;
     private Kitchen kitchen;
     private DinningRoom dinningRoom;
     private LivingRoom livingRoom;
-    private RestRoom []restRooms;
-    private BedRoom []bedRooms;
+    private RestRoom []restRooms= new RestRoom[MAX_REST_ROOMS];
+    private BedRoom []bedRooms = new BedRoom[MAX_BED_ROOMS];
     private  Yard yard;
-    void addRoom(BedRoom bedRoom){
-        bedRoom=new BedRoom();
+    private int i = 0;
+    private  int j = 0;
+    public void addRoom(BedRoom bedRoom, int i){
+      bedRooms[i] = bedRoom;
+      i++;
     }
-    void addRoom(RestRoom restRoom){
-        restRoom=new RestRoom();
+    public void addRoom(RestRoom restRoom, int j){
+        restRooms[j] = restRoom;
+        j++;
     }
 }
