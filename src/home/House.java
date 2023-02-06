@@ -14,11 +14,15 @@ public class House {
     private int i = 0;
     private  int j = 0;
     public void addRoom(BedRoom bedRoom, int i){
-      bedRooms[i] = bedRoom;
+      if(i<10) {
+          bedRooms[i] = bedRoom;
+      }
       i++;
     }
     public void addRoom(RestRoom restRoom, int j){
-        restRooms[j] = restRoom;
+        if(j<10) {
+            restRooms[j] = restRoom;
+        }
         j++;
     }
 }
